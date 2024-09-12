@@ -47,7 +47,6 @@
   background-color: var(--blnd-bg);
   font-size: 14px;
   height: 38px;
-  padding: 10px 0;
   position: relative;
   padding: 10px 20px;
   color: var(--btn-text-clr);
@@ -59,7 +58,6 @@
   font-size: 14px;
   width: 130px;
   height: 38px;
-  padding: 10px 0;
   inline-size: 130px;
   position: relative;
   padding: 10px 20px;
@@ -175,18 +173,13 @@
 
 .label {
   color: var(--accent-text-color);
-  -webkit-text-stroke: 1px var(--background-color);
-  text-stroke: 1px var(--background-color);
+  
   position: absolute;
   top: 25px;
   right: 25px;
   mix-blend-mode: hard-light;
   opacity: 0.5;
   z-index: 1;
-}
-
-.image-container {
-  position: relative;
 }
 
 .theme-menu__button {
@@ -248,6 +241,7 @@
 }
 
 .theme-menu__list {
+  margin-top: 25px;
   padding-left: 15px;
   text-align: left;
   padding-bottom: 25px;
@@ -270,10 +264,6 @@
   display: flex;
   flex-direction: column;
   position: relative;
-}
-
-.theme-menu__list {
-  margin-top: 25px;
 }
 
 .button_container {
@@ -423,5 +413,15 @@
 
   .page {
     width: var(--content-width);
+  }
+}
+
+@supports (
+  (-webkit-text-stroke: 1px var(--background-color)) or 
+  (text-stroke: 1px var(--background-color))
+) {
+  .label {
+    -webkit-text-stroke: 1px var(--background-color);
+     text-stroke: 1px var(--background-color);
   }
 }

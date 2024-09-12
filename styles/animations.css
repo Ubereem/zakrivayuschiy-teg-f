@@ -85,16 +85,8 @@
 .like-icon.is-liked .sparks {
   opacity: 1;
   animation: sparks 0.3s ease-in 0.3s 1 alternate;
-}
-
-.like-icon.is-liked .sparks {
   opacity: 0;
 }
-
-.like-icon.is-liked:not(:hover) .sparks {
-  transition-delay: 1s;
-}
-
 
 @keyframes moveArrow {
   0% {
