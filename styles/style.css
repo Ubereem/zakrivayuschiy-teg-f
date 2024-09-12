@@ -119,10 +119,6 @@
   font-weight: var(--font-weight-body);
 }
 
-.image-container {
-  outline: 2px solid var(--accent-text-color);
-}
-
 .header__tag {
   margin-top: 136px;
 }
@@ -228,7 +224,6 @@
 .theme-menu__button:disabled::before {
   content: '▶';
   position: absolute;
-  animation: moveArrow 0.5s ease-in-out infinite alternate;
   inset-inline-start: -15px;
   inset-block-start: 0px;
   color: var(--accent-text-color);
@@ -261,6 +256,7 @@
 }
 
 .image-container {
+  outline: 2px solid var(--accent-text-color);
   display: flex;
   flex-direction: column;
   position: relative;
