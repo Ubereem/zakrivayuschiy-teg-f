@@ -1,22 +1,20 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-
-    --blnd-bg: #fff;
-    --btn-text-clr: #fff;
+    --outline-color: var(--background-color);
+    --blend-background: #fff;
+    --button-text-color: #fff;
     --blend-accent: #000;
-    --iskra: #FF0000;
-    --cntr-color: #000;
+    --sparks: #FF0000;
+    --contour-color: #000;
     --font-size-body: 18px;
     --content-width: clamp(375px, 100vw, 700px);
-    --font-main: 'Inter-Variable';
-    --font-accent: 'PressStart2P';
+    --font-main: 'Inter-Variable', 'Arial', sans-serif;
+    --font-accent: 'PressStart2P', 'Press Start2P', fantasy;
     --font-weight-body: 400;
-    --font-weight-body-alt: 465;
     --font-weight-heading: 700;
-    --font-weight-heading-alt: 785;
     --accent-text-color: #000;
     --background-color: #fff;
-    --bg-gradient: repeating-linear-gradient(to right,
+    --background-gradient: repeating-linear-gradient(to right,
             #d3d3d3,
             #d3d3d3 2px,
             transparent 2px,
@@ -28,6 +26,5 @@
             transparent 4px),
         linear-gradient(to bottom,
             #e7e7e7 0.01%,
-            #1a1a1a 100%
-        );
+            #1a1a1a 100%);
 }
