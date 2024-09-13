@@ -43,6 +43,7 @@
 }
 
 .button {
+  transition: box-shadow 0.3s ease;
   border: 2px solid var(--accent-text-color);
   background-color: var(--blend-background);
   font-size: 14px;
@@ -157,7 +158,10 @@
 
 .label {
   text-transform: uppercase;
-  text-shadow: 0 0 2px var(--outline-color);
+  text-shadow: -1px 0 var(--outline-color),
+  0 1px var(--outline-color),
+ 1px 0 var(--outline-color),
+  0 -1px var(--outline-color);
   color: var(--accent-text-color);
   position: absolute;
   top: 25px;
